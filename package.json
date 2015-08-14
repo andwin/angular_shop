@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/andwin/angular_shop/issues"
   },
-  "homepage": "https://github.com/andwin/angular_shop"
+  "homepage": "https://github.com/andwin/angular_shop",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  }
 }
