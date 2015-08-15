@@ -26,4 +26,9 @@ gulp.task('copy-bower-components', function() {
     .pipe(gulp.dest('dist/bower_components'));
 });
 
-gulp.task('default', ['copy-bower-components', 'connect', 'html', 'html:watch']);
+gulp.task('copy-assets', function() {
+  gulp.src('./app/**/*.ico')
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('default', ['copy-bower-components', 'copy-assets', 'connect', 'html', 'html:watch']);
