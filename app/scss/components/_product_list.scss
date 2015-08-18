@@ -2,9 +2,24 @@
   .product {
     border: 1px solid #CCC;
     margin-bottom: 20px;
+    padding: 7px;
 
     img {
       width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .name {
+      margin: 0 5px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #747373;
+    }
+
+    .price {
+      margin: 0 5px;
+      text-align: center;
+      color: #7C7B7B;
     }
   }
 }
