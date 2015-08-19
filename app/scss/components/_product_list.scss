@@ -9,17 +9,25 @@
       margin-bottom: 5px;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     .name {
       margin: 0 5px;
       text-align: center;
       text-transform: uppercase;
-      color: #747373;
+      a {
+        color: #3E3D3D;
+      }
     }
 
     .price {
       margin: 0 5px;
       text-align: center;
-      color: #7C7B7B;
+      a {
+        color: #7C7B7B;
+      }
     }
   }
 }
