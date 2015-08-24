@@ -1,0 +1,22 @@
+.navbar-form {
+  display: inline-block;
+}
+
+.cart {
+  color: #FFF;
+  display: inline-block;
+  padding-left: 20px;
+
+  .number {
+    font-size: 30px;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
