@@ -1,11 +1,17 @@
-.navbar-form {
-  display: inline-block;
+@media (min-width: 768px) {
+  .navbar-form {
+    display: inline-block;
+  }
 }
 
 .cart {
   color: #FFF;
   display: inline-block;
   padding-left: 20px;
+
+  @media (max-width: 768px) {
+    float: right;
+  }
 
   .number {
     font-size: 30px;
