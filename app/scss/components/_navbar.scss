@@ -32,3 +32,12 @@
   font-size: 18px;
   margin-top: 60px;
 }
+
+.navbar-brand {
+  color: #AAA !important;
+  text-transform: uppercase;
+
+  .highlight {
+    color: #CCC;
+  }
+}
