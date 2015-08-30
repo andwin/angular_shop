@@ -2,7 +2,8 @@
 
 var gulp = require('gulp'),
     connect = require('gulp-connect'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    ts = require('gulp-typescript');
 
 gulp.task('connect', function() {
   connect.server({
@@ -30,6 +31,18 @@ gulp.task('sass', function () {
 
 gulp.task('sass:watch', function () {
   gulp.watch(['./app/scss/**/*.scss'], ['sass', 'html']);
+});
+
+gulp.task('typescript', function () {
+  gulp.src('./app/ts/**/*.ts')
+    .pipe(ts({
+      module: 'commonjs',
+      target: 'ES5',
+      emitDecoratorMetadata: true,
+      experimentalDecorators: true,
+      noImplicitAny: true,
+    }))
+    .js.pipe(gulp.dest('./dist'));
 });
 
 gulp.task('copy-bower-components', function() {
