@@ -45,6 +45,11 @@ gulp.task('typescript', function () {
     .js.pipe(gulp.dest('./dist'));
 });
 
+gulp.task('typescript:watch', function () {
+  console.log('safd');
+  gulp.watch(['./app/ts/**/*.ts'], ['typescript', 'html']);
+});
+
 gulp.task('copy-bower-components', function() {
   gulp.src('./bower_components/**')
     .pipe(gulp.dest('dist/bower_components'));
@@ -67,5 +72,6 @@ gulp.task('default', [
   'html:watch',
   'sass',
   'sass:watch',
-  'typescript'
+  'typescript',
+  'typescript:watch',
 ]);
