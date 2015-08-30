@@ -59,4 +59,13 @@ gulp.task('copy-assets', function() {
     .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('default', ['copy-bower-components', 'copy-assets', 'connect', 'html', 'html:watch', 'sass', 'sass:watch', 'typescript']);
+gulp.task('default', [
+  'copy-bower-components',
+  'copy-assets',
+  'connect',
+  'html',
+  'html:watch',
+  'sass',
+  'sass:watch',
+  'typescript'
+]);
